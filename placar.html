@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placar Jiu-Jitsu</title>
+  <link rel="stylesheet" href="placar.css">
+</head>
+<body>
+  <h1>PLACAR</h1>
+  <div class="container">
+    <!-- Lutador 1 -->
+    <div class="lutador">
+      <h2>LUTADOR 1</h2>
+      <div class="placar-box">
+        <p>PONTOS</p>
+        <span id="pontos1" class="pontos">0</span>
+        <div class="extras">
+          <div>
+            VANTAGENS<br>
+            <span id="vantagens1" class="vantagem">0</span><br>
+            <button onclick="addVantagem(1)">+1</button>
+            <button onclick="remVantagem(1)">-1</button>
+          </div>
+          <div>
+            FALTAS<br>
+            <span id="faltas1" class="faltas">0</span><br>
+            <button onclick="addFalta(1)">+1</button>
+            <button onclick="remFalta(1)">-1</button>
+          </div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button onclick="addPontos(1,4)">+4</button>
+        <button onclick="addPontos(1,3)">+3</button>
+        <button onclick="addPontos(1,2)">+2</button>
+        <button onclick="remPontos(1,4)">-4</button>
+        <button onclick="remPontos(1,3)">-3</button>
+        <button onclick="remPontos(1,2)">-2</button>
+      </div>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer">
+      <span id="cronometro">05:00</span><br>
+      <input type="number" id="tempoInput" placeholder="Minutos" min="1" style="padding:8px; font-size:18px; width:100px;">
+      <button onclick="alterarTempo()">Definir Tempo</button><br><br>
+      <button onclick="iniciar()">Iniciar</button>
+      <button onclick="pausar()">Pausar</button>
+      <button onclick="resetar()">Reset</button>
+    </div>
+
+    <!-- Lutador 2 -->
+    <div class="lutador">
+      <h2>LUTADOR 2</h2>
+      <div class="placar-box">
+        <p>PONTOS</p>
+        <span id="pontos2" class="pontos">0</span>
+        <div class="extras">
+          <div>
+            VANTAGENS<br>
+            <span id="vantagens2" class="vantagem">0</span><br>
+            <button onclick="addVantagem(2)">+1</button>
+            <button onclick="remVantagem(2)">-1</button>
+          </div>
+          <div>
+            FALTAS<br>
+            <span id="faltas2" class="faltas">0</span><br>
+            <button onclick="addFalta(2)">+1</button>
+            <button onclick="remFalta(2)">-1</button>
+          </div>
+        </div>
+      </div>
+      <div class="botoes">
+        <button onclick="addPontos(2,4)">+4</button>
+        <button onclick="addPontos(2,3)">+3</button>
+        <button onclick="addPontos(2,2)">+2</button>
+        <button onclick="remPontos(2,4)">-4</button>
+        <button onclick="remPontos(2,3)">-3</button>
+        <button onclick="remPontos(2,2)">-2</button>
+      </div>
+    </div>
+  </div>
+  <script src="placar.js"></script>
+</body>
+</html>
