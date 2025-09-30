@@ -1,10 +1,28 @@
 body {
-background: #222;
-color: white;
+background: #ffffff;
+color: rgb(0, 0, 0);
 font-family: Arial, sans-serif;
 text-align: center;
 }
+.banner{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+height: 500px;
+width: 500px;
 
+}
+
+.lutador2{
+  color: red;
+  font-weight: bold;
+}
+.lutador1{
+  color: rgb(0, 89, 255);
+  font-weight: bold;
+}
 h1 {
 font-size: 60px;
 margin-bottom: 30px;
@@ -13,7 +31,7 @@ margin-bottom: 30px;
 .container {
 display: flex;
 justify-content: space-around;
-align-items: flex-start;
+align-items: center;
 margin-top: 20px;
 }
 
@@ -24,11 +42,18 @@ border-radius: 15px;
 width: 350px;
 }
 
-.placar-box {
+.placar-box{
   border: none; /* remove a borda branca */
   padding: 25px; /* mantém espaçamento interno */
   margin-bottom: 20px;
-  background: #333; /* mantém o fundo escuro */
+  background: #0004ff; /* mantém o fundo escuro */
+}
+
+.placar-box1 {
+  border: none; /* remove a borda branca */
+  padding: 25px; /* mantém espaçamento interno */
+  margin-bottom: 20px;
+  background: #ff0000; /* mantém o fundo escuro */
 }
 
 .pontos {
@@ -53,7 +78,7 @@ font-weight: bold;
 }
 
 .faltas {
-color: red;
+color: rgb(255, 255, 255);
 font-size: 40px;
 font-weight: bold;
 }
